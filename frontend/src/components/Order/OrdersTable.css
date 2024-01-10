@@ -1,0 +1,40 @@
+.orders-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    width: 100%;
+    margin: 20px auto;
+    font-family: var(--font-base);
+   
+    table{
+        border-collapse: collapse;
+        color: var(--light-grey);
+    }
+
+    thead th{
+        background: #E9F3FE;
+        height: 44px;
+        font-size: 0.9rem;
+        font-weight: normal; 
+       
+    }
+    thead tr span{
+        cursor: pointer;
+    }
+    
+    tbody tr{
+        height: 44px;
+        font-size: 0.9rem;
+        font-weight: normal; 
+        text-align: center;
+    }
+
+ @media (max-width: 768px){
+    thead th,
+    tbody tr{
+        font-size: 0.6rem;
+    }
+  }
+}

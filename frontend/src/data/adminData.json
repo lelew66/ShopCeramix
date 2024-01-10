@@ -1,0 +1,19 @@
+{
+    "admin":[
+        {   "id":3,
+            "name":"Le Le Wei",
+            "password":"2024@Montreal"
+        },
+
+        {
+            "id":2,
+            "name":"Jannifer Li",
+            "password":"2024@Montreal"
+        },
+        {
+            "id":1,
+            "name":"Shao Jun Jiang",
+            "password":"2024@Montreal"
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+ {  
+    "products":[
+        {
+            "id":"1001",
+            "imageURL":["https://drive.google.com/uc?id=1bePJSTD-NHPurVhofMT2z0AemHvW9lat",
+            "https://drive.google.com/uc?id=1bePJSTD-NHPurVhofMT2z0AemHvW9lat",
+            "https://drive.google.com/uc?id=1bePJSTD-NHPurVhofMT2z0AemHvW9lat",
+            "https://drive.google.com/uc?id=1bePJSTD-NHPurVhofMT2z0AemHvW9lat",
+            "https://drive.google.com/uc?id=1bePJSTD-NHPurVhofMT2z0AemHvW9lat"],
+            "name":"European Royal Style",
+            "price":129.99,
+            "rate":4.8,
+            "included":["tea pot","tea cup"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":119,
+            "review":[{
+               
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 2, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            },
+            {
+                "title":"BEAUTIFUL",
+                "date":"December 25, 2023",
+                "content":"Like others have commented, these sets came impressively well packed. The box they arrived in wasn't pristine, but my concern about breakage was unfounded. They only cons I've found to them so far are that they are quite a bit heavier than I expected (I'm telling myself that makes them very durable) and they take up quite a bit more space in my cupboards than my previous set. I can't do anything about the former, but as far as the latter, after rearranging things a bit, I was successful in getting everything to fit. They are beautiful, and I'm excited to use them, especially since I wasn't even looking for them and simple serendipitously stumbled across them."
+            }],
+            "inventory":100
+
+        },
+        {
+            "id":"1002",
+            "imageURL":["https://drive.google.com/uc?id=1FhnorCKlm1lTiYrSznCYTIZ_alfLaZA8",
+            "https://drive.google.com/uc?id=1FhnorCKlm1lTiYrSznCYTIZ_alfLaZA8",
+            "https://drive.google.com/uc?id=1FhnorCKlm1lTiYrSznCYTIZ_alfLaZA8",
+            "https://drive.google.com/uc?id=1FhnorCKlm1lTiYrSznCYTIZ_alfLaZA8",
+            "https://drive.google.com/uc?id=1FhnorCKlm1lTiYrSznCYTIZ_alfLaZA8"],
+            "name":"Holiday Set",
+            "price":29.99,
+            "rate":4.7,
+            "included":["tea cups","tea plates"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":120,
+            "review":[{
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 11, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            }],
+            "inventory":0
+
+        },
+        {
+            "id":"1003",
+            "imageURL":["https://drive.google.com/uc?id=1OlrafvJczCswM4dkQipG9heNYzdmJn-B",
+            "https://drive.google.com/uc?id=1OlrafvJczCswM4dkQipG9heNYzdmJn-B",
+            "https://drive.google.com/uc?id=1OlrafvJczCswM4dkQipG9heNYzdmJn-B",
+            "https://drive.google.com/uc?id=1OlrafvJczCswM4dkQipG9heNYzdmJn-B",
+            "https://drive.google.com/uc?id=1OlrafvJczCswM4dkQipG9heNYzdmJn-B"],
+            "name":"breezy Set",
+            "price":139.99,
+            "rate":4.9,
+            "included":["tea pot","tea cups","tea plates"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":163,
+            "review":[{
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 11, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            }],
+            "inventory":100
+
+        },
+        {
+            "id":"1004",
+            "imageURL":["https://drive.google.com/uc?id=1-GWQdToBWustN5FFejEvZ4cj4XgzOXO0",
+            "https://drive.google.com/uc?id=1-GWQdToBWustN5FFejEvZ4cj4XgzOXO0",
+            "https://drive.google.com/uc?id=1-GWQdToBWustN5FFejEvZ4cj4XgzOXO0",
+            "https://drive.google.com/uc?id=1-GWQdToBWustN5FFejEvZ4cj4XgzOXO0",
+            "https://drive.google.com/uc?id=1-GWQdToBWustN5FFejEvZ4cj4XgzOXO0"],
+            "name":"Marbillion",
+            "price":115.99,
+            "rate":5,
+            "included":["tea pot","tea cup"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":125,
+            "review":[{
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 2, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            },
+            {
+                "title":"BEAUTIFUL",
+                "date":"December 25, 2023",
+                "content":"Like others have commented, these dishes came impressively well packed. The box they arrived in wasn't pristine, but my concern about breakage was unfounded. They only cons I've found to them so far are that they are quite a bit heavier than I expected (I'm telling myself that makes them very durable) and they take up quite a bit more space in my cupboards than my previous set. I can't do anything about the former, but as far as the latter, after rearranging things a bit, I was successful in getting everything to fit. They are beautiful, and I'm excited to use them, especially since I wasn't even looking for them and simple serendipitously stumbled across them."
+            }],
+            "inventory":100
+
+        },
+        {
+            "id":"1005",
+            "imageURL":["https://drive.google.com/uc?id=1DjOWkmH3o6r8ttQ8pAcNVjAXXdgmQLIQ",
+            "https://drive.google.com/uc?id=1DjOWkmH3o6r8ttQ8pAcNVjAXXdgmQLIQ",
+            "https://drive.google.com/uc?id=1DjOWkmH3o6r8ttQ8pAcNVjAXXdgmQLIQ",
+            "https://drive.google.com/uc?id=1DjOWkmH3o6r8ttQ8pAcNVjAXXdgmQLIQ",
+            "https://drive.google.com/uc?id=1DjOWkmH3o6r8ttQ8pAcNVjAXXdgmQLIQ"],
+            "name":"Blurish Set",
+            "price":119.99,
+            "rate":4.5,
+            "included":["tea pot","tea cups"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":254,
+            "review":[{
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 11, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            }],
+            "inventory":98
+
+        },
+        {
+            "id":"1006",
+            "imageURL":["https://drive.google.com/uc?id=1LyMoQ6RRpAeDtZkID36TIpCiXct6CqrY",
+            "https://drive.google.com/uc?id=1LyMoQ6RRpAeDtZkID36TIpCiXct6CqrY",
+            "https://drive.google.com/uc?id=1LyMoQ6RRpAeDtZkID36TIpCiXct6CqrY",
+            "https://drive.google.com/uc?id=1LyMoQ6RRpAeDtZkID36TIpCiXct6CqrY",
+            "https://drive.google.com/uc?id=1LyMoQ6RRpAeDtZkID36TIpCiXct6CqrY"],
+            "name":"Pink Panther",
+            "price":101.99,
+            "rate":5,
+            "included":["tea cups","tea plates"],
+            "detail":"These items are handmade and natural, expect variations in colors + patterns, dishwasher and microwave safevariation in size can be up to .5",
+            "number_of_reviews":198,
+            "review":[{
+                "title":"I LIKE THE TEXTURE",
+                "date":"December 11, 2023",
+                "content":"I really love the colours! They're much nicer in person. Deep purple interior, matte black exterior. My only complaint is that the plates are a bit too big to stand up in the plate section of my countertop dishwasher, although I've found a workaround that suits. :) The paint is holding up great, the dishes are holding up great. I love the size of the bowls, and find I'm eating most things out of those. LOL The dinner plates are ginormous, and I typically end up eating off the dessert plates! They do make an impact aesthetically though, and I love them. :)"
+            },
+            {
+                "title":"GREAT VALUE",
+                "date":"December 11, 2023",
+                "content":"I ordered one set just to see if they were actually any good. It is hard to tell when you order things online. But they are just as good as they look and work well in the microwave. So I have ordered two more sets."
+            }],
+            "inventory":98
+
+        }
+    ]
+}

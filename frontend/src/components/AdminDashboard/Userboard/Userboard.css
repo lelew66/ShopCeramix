@@ -1,0 +1,46 @@
+.orders-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    font-family: var(--font-base);
+   
+    table{
+        border-collapse: collapse;
+        color: var(--light-grey);
+        height: auto;
+    }
+
+    thead th{
+        background: #E9F3FE;
+        height: 44px;
+        font-size: 0.9rem;
+        font-weight: normal; 
+       
+    }
+    thead tr span{
+        cursor: pointer;
+    }
+    
+    tbody tr{
+        height: 30px;
+        font-size: 0.9rem;
+        font-weight: normal; 
+        text-align: center;
+    }
+    tbody tr td{
+        border-bottom: 1px solid #E9F3FE;
+       
+    }
+
+ @media (max-width: 768px){
+    thead th,
+    tbody tr{
+        font-size: 0.6rem;
+    }
+  }
+}

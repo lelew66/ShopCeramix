@@ -1,0 +1,28 @@
+{
+    "about" : [
+            {
+                "id":"2",
+                "title":"Going all-in with millennial design",
+                "text":"At Fine Ceramic, we're not just crafting ceramics; we're crafting experiences. Embrace the essence of millennial design as we blend contemporary aesthetics with timeless elegance. Our collection is a testament to the fusion of tradition and modernity, creating pieces that resonate with the spirit of the times.",
+                "imgURL":"https://drive.google.com/uc?id=1iCoJpyjg5LRbBA6SSnIajbi2IHako9Tj"
+            },
+            {
+                "id":"3",
+                "title":"Exploring new ways of decorating",
+                "text":"Dive into a realm of limitless creativity with our dedication to exploring new frontiers in decorating. Each piece is a canvas, and our artists are the storytellers, weaving tales of innovation and pushing the boundaries of traditional ceramic artistry. Discover the joy of decorating with unique, avant-garde designs that elevate your space.",
+                "imgURL":"https://drive.google.com/uc?id=13fvTFwe5LrZLPyk3pj_bGbD_hRkfLaNq"
+            },
+            {
+                "id":"4",
+                "title":"Handmade pieces that took time to make",
+                "text":"At Fine Ceramic, patience is our virtue. Each handmade piece is a labor of love, meticulously crafted by skilled local artists who pour their time and dedication into every detail. We believe in the beauty of slow craftsmanship, where time is not just a factor but a crucial ingredient in the creation of exquisite, timeless pieces.",
+                "imgURL":"https://drive.google.com/uc?id=1_eWyfIJCbGdQO7y8Rc8pW-j7EeL-qrw4"
+            },
+            {
+                "id":"5",
+                "title":"About our artists",
+                "text":"Meet the visionaries behind Fine Ceramic – our local artists who bring life to clay. Each artist is a storyteller, weaving their narrative into the fabric of our collection. With a commitment to authenticity and individuality, our diverse group of artisans infuse their unique perspectives, making each piece a reflection of their passion, skill, and dedication. Join us in celebrating the artists who make Fine Ceramic a canvas of creativity and a home for truly exceptional craftsmanship.",
+                "imgURL":"https://drive.google.com/uc?id=1kzlp7T_p7IKDTjZccpfkIaDFYu5GVSTu"
+            }
+    ]
+}
