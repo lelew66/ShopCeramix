@@ -24,13 +24,15 @@ const ProductDetail = () => {
     .filter((productInfo) => productInfo._id !== productData._id)
     .map((productInfo) => (
       <RecommandCard
+        data = {productInfo}
+        products = {location.state.products}
         key={productInfo.id}
         id={productInfo.id}
         imgURL={productInfo.imageURL[1]}
         name={`${productInfo.name[0].toUpperCase()}${productInfo.name.slice(1)}`}
         price={productInfo.price}
-        rate={productInfo.rate}
-        numberOfViews={productInfo.number_of_reviews}
+        rate={productInfo.rating}
+        numberOfViews={productInfo.numReviews}
       />
     ));
 

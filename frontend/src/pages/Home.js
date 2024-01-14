@@ -72,7 +72,8 @@ export default function Home () {
                </div>
              </Link>
 
-            <Link to={{ pathname: '/drinkset', search: `?type=drinkset` }}  className="subCategory">
+            {/* drinkset */}
+            <Link to={{ pathname: '/tableware', search: `?type=Drink` }}  className="subCategory">
                <div  className='categoryIcon'>
                   <img src={drinkSet} alt="" style={{width:'50px'}} />
                   <h4 style={{fontFamily: `var(--font-base)`, fontWeight:'normal', color:'#772f67'}}>DRINK SET </h4>

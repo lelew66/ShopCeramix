@@ -79,7 +79,7 @@ const ProductCategory = () => {
         </div>
       </div>
       <div className="product-main">
-        <h1 className="product-title">Tableware</h1>
+        <h1 className="product-title">{type}</h1>
         <div className="card-container">
           {/* {card} */}
 
