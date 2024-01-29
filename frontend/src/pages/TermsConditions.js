@@ -1,6 +1,6 @@
 import React from "react";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 const TermsConditions = () => {

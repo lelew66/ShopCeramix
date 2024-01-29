@@ -1,4 +1,4 @@
-import React, { useContext,useState,useEffect } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { ShopContext } from "../../context/shop-context";
 import './cartItemCard.css'
 import { useAuthContext } from "../../hooks/useAuthContext";
@@ -6,17 +6,9 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 export const CartItemCard = (props) => {
   const { user } = useAuthContext();
 
-  const { addToCart, removeFromCart, updateCartItemCount,cartNeedUpdate } = useContext(ShopContext);
-  const [itmeNumeber, setItmeNumeber] = useState(props.quantity);
-
-  let needUpdate = cartNeedUpdate();
-  useEffect(() => {
-    async function fetchData() {
-        // setTotalitems(await getTotalCartItems(user));
-        setItmeNumeber(props.quantity);
-    }
-    fetchData();
-}, [itmeNumeber,needUpdate]);
+  const { addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext);
+  
+  let itemNumber = props.quantity;
 
   return (
     <div className="cartItem">
@@ -30,7 +22,7 @@ export const CartItemCard = (props) => {
         <div className="countHandler">
           <button className="plus-btn" onClick={() => removeFromCart(props._id, user)}> - </button>
           <input
-            value={itmeNumeber}
+            value={itemNumber}
             onChange={(e) => updateCartItemCount(Number(e.target.value), props._id, user)}
           />
           <button className="plus-btn" onClick={() => addToCart(props._id, user)}> + </button>

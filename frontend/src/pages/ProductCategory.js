@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import ProductCard from "../components/ProductCard"
-import { Link, useSearchParams  } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 // import products from '../data/productsData.json'
 import Footer from '../components/Footer/Footer'
 
@@ -13,7 +13,7 @@ const ProductCategory = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   // console.log("-->type:", type);
-  
+
   const [searchParams] = useSearchParams();
   const type = searchParams.get('type');
   // console.log("-->type:", type);
@@ -44,20 +44,8 @@ const ProductCategory = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
-  
-  // let card = products.products.map((productInfo) => (
-  //   <ProductCard
-  //     key={productInfo.id}
-  //     id={productInfo.id}
-  //     imgURL={productInfo.imageURL[0]}
-  //     name={`${productInfo.name[0].toUpperCase()}${productInfo.name.slice(1)}`}
-  //     price={productInfo.price}
-  //     rate={productInfo.rate}
-  //     numberOfViews={productInfo.number_of_reviews}
-  //   />
-  // ));
 
- return (
+  return (
     <>
       <Promo />
       <Navbar />
@@ -83,20 +71,26 @@ const ProductCategory = () => {
         <div className="card-container">
           {/* {card} */}
 
-          {data.map((productInfo) => (
-            <ProductCard
-              data = {productInfo}
-              products = {data}
-              key={productInfo.id}
-              id={productInfo.id}
-              _id={productInfo._id}
-              imgURL={productInfo.imageURL[0]}
-              name={`${productInfo.name[0].toUpperCase()}${productInfo.name.slice(1)}`}
-              price={productInfo.price}
-              rate={productInfo.rating}
-              numberOfViews={productInfo.numReviews}
-            />
-          ))}
+          {data.map((productInfo) => {
+            {/* let imgURL = productInfo.imageURL[0];
+            imgURL = imgURL.replace("https://drive.google.com/uc?id=", "https://www.googleapis.com/drive/v3/files/") +
+              "&alt=media&key=" + process.env.REACT_APP_GOOGLE_API_KEY; */}
+            return (
+              <ProductCard
+                data={productInfo}
+                products={data}
+                key={productInfo.id}
+                id={productInfo.id}
+                _id={productInfo._id}
+                imgURL={productInfo.imageURL[0]}
+                // imgURL={imgURL}
+                name={`${productInfo.name[0].toUpperCase()}${productInfo.name.slice(1)}`}
+                price={productInfo.price}
+                rate={productInfo.rating}
+                numberOfViews={productInfo.numReviews}
+              />
+            )
+          })}
         </div>
       </div>
       <Footer />

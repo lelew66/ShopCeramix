@@ -2,6 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require("path");
 
 
 const userRoutes = require('./routes/userRoute');
@@ -17,9 +18,12 @@ const Review = require('./models/ReviewModel');
 
 
 const app = express();
+const _dirname = path.dirname("");
+const buildPath = path.join(_dirname, "../frontend/build");
 
 //middleware
 app.use(cors());
+app.use(express.static(buildPath));
 app.use(express.json()); //check req body, if there is body then attach to req object
 
 app.use((req, res, next) => {
@@ -53,4 +57,14 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 
-
+    app.get("/", (req, res) => {
+        res.sendFile(
+          path.join(__dirname, "../frontend/build", "index.html"),
+          (err) => {
+            if (err) {
+              res.status(500).send(err);
+            }
+          }
+        );
+      });
+      

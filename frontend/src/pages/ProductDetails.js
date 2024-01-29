@@ -4,7 +4,7 @@ import data from "../data/reviewsData.json";
 import ProductData from "../data/productsData.json";
 import ProductInfo from "../components/ProductInfo";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import RecommandCard from "../components/RecommandCard";
 import ImageSlider from "../components/ImageSlieder";
 import { useParams, useLocation } from "react-router-dom";

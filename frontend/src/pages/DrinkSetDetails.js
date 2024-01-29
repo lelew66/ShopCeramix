@@ -4,7 +4,7 @@ import data from "../data/reviewsData.json";
 import drinksets   from '../data/drinkSetsData.json'
 import ProductInfo from "../components/ProductInfo";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 import DrinkSetRecommand from "../components/DrinkSetRecommand";
 import ImageSlider from "../components/ImageSlieder";

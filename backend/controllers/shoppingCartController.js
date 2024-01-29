@@ -55,10 +55,13 @@ const addItem = async (req, res) =>{
             // console.log("==>Remove the item from the cart, quantity<=0 :",user.shoppingCart[existingItemIndex].productQuantity);
             user.shoppingCart.splice(existingItemIndex, 1);
         }   
-    } else {
+    } else if(quantity>0) {
         // Add new item to the cart
         // user.shoppingCart.push({ productId, name, imageURL, price, productQuantity: quantity});
         user.shoppingCart.push({ productId, productQuantity: quantity});
+    }
+    else {
+        return res.status(500).json({ message: 'Product quantity is invalid' });
     }
 
     // Save the user with the updated cart

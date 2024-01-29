@@ -8,7 +8,7 @@ import { useLogout } from "../hooks/useLogout";
 import { getHours } from "date-fns";
 
 import OrdersTable from "../components/Order/OrdersTable";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Promo from "../components/Promo/Promo";
 import Footer from "../components/Footer/Footer";
 

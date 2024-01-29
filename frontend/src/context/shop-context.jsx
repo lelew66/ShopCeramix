@@ -37,7 +37,7 @@ export const ShopContextProvider = (props) => {
       return [];
     }
 
-    
+
     const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/shoppingcart`, {
       method: 'GET',
       headers: {
@@ -77,9 +77,22 @@ export const ShopContextProvider = (props) => {
     return cartInfo;
   }
 
+  const getItemCount = async (_id, user) => {
+    const cart = await getCart(user);
+    console.log("getItemCount, _id:", _id);
+
+    for (const item in cart) {
+      if (cart[item].productId === _id) {
+        console.log("getItemCount, quantity:", cart[item].productQuantity);
+        return cart[item].productQuantity;
+      }
+    }
+    return 0;
+  };
+
   const getTotalCartAmount = async (user) => {
 
-    if(!user){
+    if (!user) {
       console.log("getTotalCartAmount, user is null: ", user);
       return 0;
     }
@@ -139,7 +152,7 @@ export const ShopContextProvider = (props) => {
   };
 
   const addToCart = async (itemId, user) => {
-    if(!user){
+    if (!user) {
       return;
     }
     // setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -208,6 +221,7 @@ export const ShopContextProvider = (props) => {
 
   const updateCartItemCount = (newAmount, itemId) => {
     // setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+    console.log("updateCartItemCount, newAmount:", newAmount, itemId);
   };
 
   const checkout = async (user) => {
@@ -260,6 +274,7 @@ export const ShopContextProvider = (props) => {
     cartNeedUpdate,
     getCart,
     getCartInfo,
+    getItemCount,
   };
 
   return (

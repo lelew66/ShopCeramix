@@ -1,11 +1,7 @@
 import React from "react";
-
-
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from '../components/Footer/Footer'
-
-
 import { AiFillPhone } from "react-icons/ai";
 // import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillEnvironment } from "react-icons/ai";
@@ -152,9 +148,6 @@ const ContactUs = () => {
                 </div>
 
             </div>
-
-
-
             <Footer />
         </div>
     )

@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e94f6f6b.css",
-    "main.js": "/static/js/main.3cb3c626.js",
+    "main.css": "/static/css/main.fb1d53c2.css",
+    "main.js": "/static/js/main.6f8ac9bd.js",
     "static/media/Hero.png": "/static/media/Hero.a98cfc5cda081accad59.png",
+    "static/media/about2.jpg": "/static/media/about2.7dc55a74f4abbdc7d0c8.jpg",
     "static/media/signup.png": "/static/media/signup.a62cfa114fbf531c5f60.png",
+    "static/media/about4.jpg": "/static/media/about4.1226b32eb2354ae6ab3f.jpg",
+    "static/media/about5.jpg": "/static/media/about5.27fa4a498e11f004a3f4.jpg",
     "static/media/signin.png": "/static/media/signin.8aa8df47e66749dc6e23.png",
+    "static/media/about3.jpg": "/static/media/about3.3d33e0e7de0ed7209793.jpg",
     "static/media/greenPlate.png": "/static/media/greenPlate.1cb5e1bcce3a71e95918.png",
     "static/media/pinkTeaset.png": "/static/media/pinkTeaset.3daffad859dcadf5f21f.png",
     "static/media/RedVasse.png": "/static/media/RedVasse.8ff3aea65c7b7fdea0fc.png",
@@ -12,11 +16,12 @@
     "static/media/background.png": "/static/media/background.f0679a8aef3e5257e1dd.png",
     "static/media/google.png": "/static/media/google.fddbcc4d355cfceefa4b.png",
     "index.html": "/index.html",
-    "main.e94f6f6b.css.map": "/static/css/main.e94f6f6b.css.map",
-    "main.3cb3c626.js.map": "/static/js/main.3cb3c626.js.map"
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.fb1d53c2.css.map": "/static/css/main.fb1d53c2.css.map",
+    "main.6f8ac9bd.js.map": "/static/js/main.6f8ac9bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e94f6f6b.css",
-    "static/js/main.3cb3c626.js"
+    "static/css/main.fb1d53c2.css",
+    "static/js/main.6f8ac9bd.js"
   ]
 }

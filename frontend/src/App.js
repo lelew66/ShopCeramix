@@ -17,9 +17,9 @@ import ContactUs from './pages/ContactUs';
 import OrderConfirmation from './pages/OrderConfirmation'; 
 import DrinkSetDetails from './pages/DrinkSetDetails';
 import { ShopContextProvider } from "./context/shop-context";
-import ReviewDashboard from './CRUD/Reviews/ReviewDashboard';
 import UserReviews from "./components/UserReviews/UserReviews"
 import Admin from './pages/Admin';
+import { Suspense } from "react";
 
 function App() {
   const { user } = useAuthContext();
@@ -27,7 +27,9 @@ function App() {
     <>
    
      <BrowserRouter>
+
      <ShopContextProvider>
+     <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/signup" element={!user ? <Signup/> : <Navigate to="/"/>} />
@@ -54,6 +56,7 @@ function App() {
         <Route path="/userReviews" element={<UserReviews  />} />
         <Route path="/adminportal" element={user && <Admin />} />
       </Routes>
+      </Suspense>
       </ShopContextProvider>
      </BrowserRouter>
     

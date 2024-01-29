@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import DashboradReviewCard from "../AdminDashboard/Reviewboard/Reviewboard ";
-import Navbar from "../Navbar";
+import Navbar from "../Navbar/Navbar";
 import "./userReviews.css";
 import axios from "axios";
 import CreateReviews from "./CreateReviews";

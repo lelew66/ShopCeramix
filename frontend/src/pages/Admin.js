@@ -3,7 +3,7 @@ import {useNavigate, Link} from 'react-router-dom';
 import { useAuthContext } from '../hooks/useAuthContext';
 import {useLogout} from '../hooks/useLogout';
 import {getHours} from 'date-fns';
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar/Navbar";
 import Promo from '../components/Promo/Promo';
 import Footer from '../components/Footer/Footer';
 import Userboard from '../components/AdminDashboard/Userboard/Userboard';

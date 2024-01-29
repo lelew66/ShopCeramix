@@ -1,6 +1,6 @@
 import React from "react";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import DrinkSetCard from '../components/DrinkSetCard';
 import { Link } from "react-router-dom";
 import drinksets   from '../data/drinkSetsData.json'

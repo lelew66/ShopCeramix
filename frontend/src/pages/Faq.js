@@ -2,7 +2,7 @@ import React from "react";
 import data from "../data/faqData.json";
 import FaqCard from "../components/FaqCard";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from '../components/Footer/Footer'
 import { Link } from 'react-router-dom';
 

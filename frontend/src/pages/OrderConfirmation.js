@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import Promo from "../components/Promo/Promo";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from '../components/Footer/Footer'
 import OrderImg from '../assets/orderConfirmation.png';
 import { useAuthContext } from "../hooks/useAuthContext";

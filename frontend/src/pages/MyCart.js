@@ -1,49 +1,39 @@
 import React, { useContext, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuthContext } from "../hooks/useAuthContext";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Promo from "../components/Promo/Promo";
 import Footer from "../components/Footer/Footer";
 import { ShopContext } from "../context/shop-context";
 // import PRODUCTS from "../data/productsData.json";
 import { CartItemCard } from "../components/CartItemCard/CartItemCard";
+import RedVasse from '../assets/RedVasse.png';
+import pinkTeaset from '../assets/pinkTeaset.png';
+import greenPlate from '../assets/greenPlate.png';
 
 const MyCart = () => {
   const { user } = useAuthContext();
 
-  const {checkout, getCartInfo } = useContext(ShopContext);
+  const { checkout, getCartInfo, getTotalCartAmount, cartNeedUpdate } = useContext(ShopContext);
   const [totalAmount, setTotalAmount] = useState(0);
-
   const navigate = useNavigate();
-
   const [showPayment, setShowPayment] = useState(false);
-  // const [isloading, setIsLoading] = useState(true);
-  const [myCart, setMyCart] = useState([]);
   const [items, setItems] = useState([]);
 
-  let prodects;
 
-  //let myCart = [];
-    useEffect(() => {
+  let needUpdate = cartNeedUpdate();
+
+  useEffect(() => {
     async function fetchData() {
       const data = await getCartInfo(user);
-      console.log("====>data:", data);
+      const totalAmount = await getTotalCartAmount(user);
+      // console.log("====>data:", data);
       setItems(data);
-      console.log("====>totalAmount:", data.length);
-      setTotalAmount(data.length);
+      // console.log("====>totalAmount:", data.length);
+      setTotalAmount(Math.round(totalAmount * 100) / 100);
     }
     fetchData();
-  }, []);
-
-  //const card = myCart.map((product) => (
-  //     <CartItemCard
-  //     key={product.id}
-  //     id={product.id}
-  //     name={product.name}
-  //     price={product.price}
-  //     image={product.imageURL[0]}
-  //   />
-  // ));
+  }, [needUpdate]);
 
   return (
     <div className="page-container">
@@ -52,12 +42,21 @@ const MyCart = () => {
       {!user && (
         <div className="cart">
           <h2>Check out all our elegant ceramics</h2>
-          <h5 className="page-subtitle">Home Décor</h5>
-          product 1 component goes here
-          <h5 className="page-subtitle">DRINK SET</h5>
-          product 2 component goes here
-          <h5 className="page-subtitle">TABLEWARE</h5>
-          product 3 component goes here
+
+          <div style={{ display: 'flex', flexDirection: 'row', minWidth: '380px', marginTop: '80px', width: '100%' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', width: '380px', justifyContent: 'center' }}>
+              <Link className="page-subtitle" to='/tableware?type=Decor' >Home Décor<img style={{ width: '80px' }} src={RedVasse} alt="homedecor" /></Link>
+
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'row', width: '380px', justifyContent: 'center' }}>
+              <Link className="page-subtitle" to='/tableware?type=Drink' >Drink Set<img style={{ width: '80px' }} src={pinkTeaset} alt="homedecor" /></Link>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'row', width: '380px', justifyContent: 'center' }}>
+              <Link className="page-subtitle" to='/tableware?type=Tableware' >Tableware<img style={{ width: '80px' }} src={greenPlate} alt="homedecor" /></Link>
+            </div>
+          </div>
         </div>
       )}
       {user && (
@@ -83,7 +82,7 @@ const MyCart = () => {
                       />
                     ))}
                   </div>
-                  <p> Subtotal: ${totalAmount} </p>
+                  <p> Subtotal: ${totalAmount}</p>
                   <button className="checkout-btn" onClick={() => navigate("/")}>
                     {" "}
                     Continue Shopping{" "}
@@ -91,9 +90,7 @@ const MyCart = () => {
                   <button
                     className="checkout-btn"
                     onClick={() => {
-                      // checkout();
                       setShowPayment(true);
-
                     }}
                   >
                     {" "}

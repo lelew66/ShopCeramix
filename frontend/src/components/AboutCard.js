@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutCard = (props) => {
+  const { t } = useTranslation(["aout"]);
   return (
     <div className="about-card">
       <div className="about-card-body">

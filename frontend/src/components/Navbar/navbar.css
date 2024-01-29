@@ -1,0 +1,20 @@
+.lang_box{
+    margin-left: 10px;
+}
+.lang_ul{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.select-language {
+    padding: 4px;
+    font-size: 12px;
+    border: 0.5px solid var(--dark-blue);
+    border-radius: 4px;
+    color: var(--dark-blue);
+    font-family: var(--font-base);
+  }
+  .navbar-link{
+    width: max-content;
+  }

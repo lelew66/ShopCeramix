@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useTranslation } from "react-i18next";
 import './Footer.css';
 
 //NEED ADD handleSubmit function to post the email address to database subscribeEmail collection
 
 const Footer = () => {
+  const { t } = useTranslation(["footer"]);
   return (
     <div className='footer'>
       <div className="newsletter">
       
-         <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+         <h3>{t('sign_up_title1')}</h3>
             <form className='newsletter-form'>
                 <input type="email" />
-                <button className='btn'> SUBSCRIBE</button> 
+                <button className='btn'>{t('SUBSCRIBE')} </button> 
             </form>
       </div>
      <div className="footer-bottom">
@@ -21,16 +22,14 @@ const Footer = () => {
                 <div className="footer-link-group">
                    
                     <div className="link-items">
-                    <div className="link-items-title"><h4>CUSTOMER SERVICE</h4></div>
+                    <div className="link-items-title"><h4>{t('CUSTOMER_SERVICE')} </h4></div>
                         <ul>
-                            <li>Instructions</li>
+                            <li>{t('sub_title1')} </li>
                             <li>
-                            <a href="/faq"> FAQ </a>
+                            <a href="/faq">{t('sub_title2')} </a>
                             </li>
-                            <li>Support</li>
-                            {/* <li>
-                            <a href="/orderconfirmation"> Order </a>
-                            </li> */}
+                            <li>{t('sub_title3')}</li>
+
                         </ul>
                     </div>
                 </div>
@@ -38,15 +37,15 @@ const Footer = () => {
                 <div className="footer-link-group">
                    
                     <div className="link-items">
-                    <div className="link-items-title"><h4>COMPANY</h4></div>
+                    <div className="link-items-title"><h4>{t('COMPANY')}</h4></div>
                         <ul>
                             <li>                            
-                            <a href="/termsconditions"> Terms & Conditions</a>
+                            <a href="/termsconditions">{t('sub_title4')}</a>
                             </li>
-                            <li>Privacy Policy</li>
-                            <li>Accessibility Statement</li>
+                            <li>{t('sub_title5')}</li>
+                            <li>{t('sub_title6')}</li>
                             <li>
-                              <Link to="/adminportal">Admin Portal</Link>
+                              <Link to="/adminportal">{t('sub_title7')}</Link>
                             </li>
                             
                         </ul>
@@ -55,7 +54,7 @@ const Footer = () => {
         
         </div>
 
-        <div className="rights"><p>CERAMIX 2023. All Rights Reserved.</p></div>
+        <div className="rights"><p>{t('copy_right')}</p></div>
      </div>
      
 

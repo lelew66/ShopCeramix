@@ -1,10 +1,14 @@
 import React from 'react';
 import './Promo.css';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Promo () {
+
+  const{ t }=useTranslation(['promo']);
   return (
     <div className='promo'>
-        <p>BOXING DAY SPECIAL PRICE WITH PROMOTION CODE “BOXINGCERAMICS”. LIMITED OFFER ONLY FOR FIRST 200 ORDERS!!</p>
+        <p>{t("promo")}</p>
     </div>
   )
 }
